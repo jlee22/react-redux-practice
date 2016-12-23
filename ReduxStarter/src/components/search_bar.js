@@ -21,6 +21,7 @@ class SearchBar extends Component {
     this.setState({term});
     this.props.onSearchTermChange(term);
   }
+  
 }
 
 export default SearchBar;
