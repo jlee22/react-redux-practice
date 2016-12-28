@@ -4,5 +4,4 @@
   * Youtube API
   * Only React
 
-![img](/ReduxStarter/React Youtube App.gif)
-
+![img](/Youtube Clone/React Youtube App.gif)
