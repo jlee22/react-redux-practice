@@ -9,3 +9,4 @@
   2. Redux app
     * Redux
     * React
+    * Displays a collection of books and returns Details
