@@ -4,7 +4,7 @@ export const FETCH_WEATHER = 'FETCH_WEATHER';
 
 export function fetchweather(city) {
   const url = `${ROOT_URL}&q=${city},us`;
-
+  
   return {
     type: FETCH_WEATHER
   };
