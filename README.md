@@ -6,7 +6,11 @@
 
 ![img](/Youtube Clone/React Youtube App.gif)
 
-  2. Redux app
+  2. Redux practice app
+    * Redux
+    * React
+
+  3. Weather App w/ charts and search funtion
     * Redux
     * React
     * Displays a collection of books and returns Details
