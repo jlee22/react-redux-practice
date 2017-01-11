@@ -13,3 +13,4 @@
   3. Weather App w/ charts and search funtion
     * Redux
     * React
+    * Displays a collection of books and returns Details
