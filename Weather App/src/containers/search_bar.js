@@ -10,8 +10,11 @@ export default class SearchBar extends Component {
   render() {
     return (
       <form className="input-group">
-        <input />
-        <span>
+        <input
+        placeholder="Get a five-day forecast in your favorite cities"
+        className='form-control'
+        />
+        <span className="input-group-btn">
           <button type="submit" className="btn btn-secondary">Search</button>
         </span>
       </form>
