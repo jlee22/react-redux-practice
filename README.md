@@ -5,11 +5,14 @@
   * Only React
 
   ![img](/Youtube Clone/React Youtube App.gif)
-____
+----
+
 2. Redux practice app - Displays a collection of books and returns Details
   * Redux
   * React
-____
+
+----
+
 3. Weather App that displays 5 day forecast data on city search
   * Redux
   * React
