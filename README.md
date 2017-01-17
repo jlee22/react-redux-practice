@@ -23,7 +23,6 @@
 
 4. Blogging App that utilizes routes (index/show/new)
   * React Redux
-  * Routes
+  * React Router
   * Able to navigate and create posts
-
-  
+  * Uses external post data API
