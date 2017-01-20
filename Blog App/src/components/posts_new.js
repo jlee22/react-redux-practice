@@ -8,7 +8,7 @@ class PostsNew extends Component {
         <h3>Create Post</h3>
 
         <div className="form-group">
-          <label>Categories</label>
+          <label>Title</label>
           <label type="text" className="form-control" />
         </div>
 
@@ -18,7 +18,7 @@ class PostsNew extends Component {
         </div>
 
         <div className="form-group">
-          <label>Categories</label>
+          <label>Content</label>
           <label type="text" className="form-control" />
         </div>
 
