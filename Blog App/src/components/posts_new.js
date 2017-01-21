@@ -15,10 +15,13 @@ class PostsNew extends Component {
         <div className="form-group">
           <label>Title</label>
           <input type="text" className="form-control" {...title} />
+          <div>
+            {title.error}
+          </div>
         </div>
 
         <div className="form-group">
-          <label>Categories</label>
+          <label>Category</label>
           <input type="text" className="form-control" {...categories} />
         </div>
 
@@ -33,10 +36,22 @@ class PostsNew extends Component {
   }
 }
 
+function validate(values) {
+  const errors = {};
+
+  if (!values.title) {
+    errors.title = 'Please enter a title';
+
+  }
+
+  return errors;
+}
+
 //connect: first argument is mapStateToProps, 2nd is mapDispatchToProps
 // reduxForm: 1st is form config, 2nd is mapStateToProps, 3rd is mapDispatchToProps
 
 export default reduxForm({
   form: 'PostsNewForm',
-  fields: ['title', 'categories', 'content']
+  fields: ['title', 'categories', 'content'],
+  validate
 }, null, { createPost })(PostsNew);
