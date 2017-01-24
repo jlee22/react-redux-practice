@@ -9,5 +9,7 @@ export default (
   <Route path="/" component={App}>
     <IndexRoute component={PostsIndex} />
     <Route path="posts/new" components={PostsNew} />
+    // this.props.params.id
+    <Route path="posts/:id" component={PostsShow} />
   </Route>
 );
