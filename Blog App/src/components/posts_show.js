@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { fetchPost } from '../actions/index';
+import { fetchPost, deletePost } from '../actions/index';
 import { Link } from 'react-router';
 
 class PostsShow extends Component {
@@ -17,7 +17,12 @@ class PostsShow extends Component {
         <h3>{post.title}</h3>
         <h6>Category: {post.categories}</h6>
         <p>{post.content}</p>
-        <Link to="/">&#60;&#60; Back to Index</Link>
+        <button className="btn btn-danger pull-xs-right"> 
+          Delete Post
+        </button>
+        <div>
+          <Link to="/">&#60;&#60; Back to Index</Link>
+        </div>
       </div>
     );
   }
@@ -27,4 +32,4 @@ function mapStateToProps(state) {
   return { post: state.posts.post }
 }
 
-export default connect(mapStateToProps, { fetchPost })(PostsShow);
+export default connect(mapStateToProps, { fetchPost, deletePost })(PostsShow);
