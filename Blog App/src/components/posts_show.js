@@ -7,6 +7,11 @@ class PostsShow extends Component {
   componentWillMount() {
     this.props.fetchPost(this.props.params.id);
   }
+
+  onDeleteClick() {
+    this.props.deletePost(this.props.params.id);
+  }
+
   render() {
     const { post } = this.props;
     if (!post) {
@@ -17,7 +22,7 @@ class PostsShow extends Component {
         <h3>{post.title}</h3>
         <h6>Category: {post.categories}</h6>
         <p>{post.content}</p>
-        <button className="btn btn-danger pull-xs-right"> 
+        <button className="btn btn-danger pull-xs-right" onClick={this.onDeleteClick.bind(this)}>
           Delete Post
         </button>
         <div>
