@@ -14,3 +14,7 @@ h3 {
 h3 .pull-xs-right {
   margin-left: 3%
 }
+
+textarea {
+  height: 10em;
+}
