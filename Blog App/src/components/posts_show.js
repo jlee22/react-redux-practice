@@ -7,6 +7,9 @@ class PostsShow extends Component {
     this.props.fetchPost(this.props.params.id);
   }
   render() {
+    if (!this.props.post) {
+      return <div>Loading...</div>
+    }
     return <div>Show post {this.props.params.id}</div>;
   }
 }
