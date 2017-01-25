@@ -23,9 +23,9 @@
 
 4. Blogging App that utilizes routes (index/show/new)
   * React Redux
-  * React Router
-  * Redux Form
-  * Able to navigate and create posts
+  * React Router - RESTful Routes
+  * Redux Form - Submitting data
   * Uses external post data API
+  * Able to create and delete posts
 
   ![img](/Blog App/Blog App.gif)
