@@ -5,3 +5,16 @@ form a {
 .pull-xs-right {
   padding-left: 1%;
 }
+
+h3 {
+  padding-top: 2%;
+  padding-bottom: 1%
+}
+
+h3 .pull-xs-right {
+  margin-left: 3%
+}
+
+textarea {
+  height: 10em;
+}

@@ -27,3 +27,5 @@
   * Redux Form
   * Able to navigate and create posts
   * Uses external post data API
+
+  ![img](/Blog App/Blog App.gif)
